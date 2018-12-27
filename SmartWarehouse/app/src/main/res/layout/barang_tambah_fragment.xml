@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="50dp">
+
+    <LinearLayout
+        android:id="@+id/barang_tambah_linear1"
+        android:layout_width="353dp"
+        android:layout_height="472dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/barang_tambah_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:inputType="none"
+            android:text="Masukkan ID Barang"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="71dp" />
+
+
+        <EditText
+            android:id="@+id/barang_tambah_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="none"
+            android:text="Masukkan Nama Barang" />
+
+        <Spinner
+            android:id="@+id/barang_tambah_spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#2ecc71"
+            android:entries="@array/android_dropdown_arrays"
+            android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/barang_tambah_edit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="none"
+            android:text="Masukkan Stock Barang" />
+
+        <Spinner
+            android:id="@+id/barang_tambah_spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#2ecc71"
+            android:entries="@array/android_dropdown"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/barang_tambah_button1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="130dp"
+            android:background="@color/colorPrimary"
+            android:text="SIMPAN"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/namaPengguna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/nama_pengguna"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="@string/kata_sandi"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/masuk"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/biruMuda"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/button1"
+            android:textColor="@color/putih" />
+
+        <Button
+            android:id="@+id/lupa-password"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="105dp"
+            android:background="@color/biruMuda"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/lupa_password"
+            android:textColor="@color/putih" />
+
+        <TextView
+            android:id="@+id/login_atau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="170dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/atau" />
+    </RelativeLayout>
+</LinearLayout>
