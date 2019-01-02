@@ -1,45 +1,30 @@
 package com.example.febrinia.newrpl;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.mikepenz.materialdrawer.Drawer;
-import com.mikepenz.materialdrawer.DrawerBuilder;
-import com.mikepenz.materialdrawer.model.PrimaryDrawerItem;
-import com.mikepenz.materialdrawer.model.SecondaryDrawerItem;
-import com.mikepenz.materialdrawer.model.SectionDrawerItem;
-import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
-import com.ncapdevi.fragnav.FragNavController;
-import com.roughike.bottombar.BottomBar;
-
 public class MainActivity extends AppCompatActivity {
 
-    private ActionBar toolbar;
+    private Toolbar toolbar;
     private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       toolbar = getSupportActionBar();
-       bottomNavigationView = findViewById(R.id.bottom_navigation);
-       bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(false);
         toolbar.setTitle("HomeActivity");
         loadFragment(new HomeFragment());
     }
@@ -57,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     loadFragment(fragment);
                     return true;
                 case R.id.item2:
-                    toolbar.setTitle("Stock");
+                    toolbar.setTitle("StockItem");
                     fragment = new StockFragment();
                     loadFragment(fragment);
                     return true;
@@ -80,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     };
-
 
 
     private void loadFragment(Fragment fragment) {

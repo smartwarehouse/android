@@ -44,7 +44,7 @@ public class Stock extends AppCompatActivity {
         // Set below attributes to add logo in ActionBar.
         actionBar.setDisplayShowHomeEnabled(true);
 
-        lView = (ListView) findViewById(R.id.list1);
+//        lView = (ListView) findViewById(R.id.list1);
 
         lAdapter = new ListAdapter(Stock.this, version, versionNumber, images);
 

@@ -6,10 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Stock">
-
-
-    <ListView
-        android:id="@+id/list1"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_stocks"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_stock">
+
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>
