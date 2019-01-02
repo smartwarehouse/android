@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="wrap_content"
     android:padding="10dp">
 
     <ImageView
@@ -14,7 +14,7 @@
 
     <TextView
         android:id="@+id/aNametxt"
-        android:text="Android Name"
+        tools:text="Android Name"
         android:textSize="20sp"
         android:layout_marginTop="8dp"
         android:maxLines="1"
@@ -31,6 +31,7 @@
         android:text="Android Version"
         android:textSize="14sp"
         android:maxLines="1"
+        tools:text="Version"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/aNametxt"
