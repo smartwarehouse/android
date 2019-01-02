@@ -25,41 +25,21 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.ncapdevi.fragnav.FragNavController;
 import com.roughike.bottombar.BottomBar;
 
-//import info.androidhive.bottomnavigation.fragment.CartFragment;
-//import info.androidhive.bottomnavigation.fragment.GiftsFragment;
-//import info.androidhive.bottomnavigation.fragment.ProfileFragment;
-//import info.androidhive.bottomnavigation.fragment.StoreFragment;
-//import info.androidhive.bottomnavigation.helper.BottomNavigationBehavior;
-
 public class MainActivity extends AppCompatActivity {
 
     private ActionBar toolbar;
-   // private DrawerLayout aDrawerLayout;
-   // private ActionBarDrawerToggle aToggle;
     private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.home);
        toolbar = getSupportActionBar();
        bottomNavigationView = findViewById(R.id.bottom_navigation);
        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-//        setContentView(R.layout.fragment_home);
- //       aDrawerLayout = (DrawerLayout) findViewById(R.id.home);
 
-        //aToggle = new ActionBarDrawerToggle(this, aDrawerLayout,R.string.open,R.string.close);
-        //aDrawerLayout.addDrawerListener(aToggle);
-        //aToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(false);
-
-        //BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-        //navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        // load the store fragment by default
         toolbar.setTitle("HomeActivity");
         loadFragment(new HomeFragment());
     }
@@ -104,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void loadFragment(Fragment fragment) {
-        // load fragment
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.frame_container, fragment);
         transaction.addToBackStack(null);
