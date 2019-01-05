@@ -19,7 +19,11 @@ android {
 }
 
 dependencies {
+<<<<<<< HEAD
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+=======
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
     //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
@@ -35,8 +39,11 @@ dependencies {
     implementation 'com.roughike:bottom-bar:1.3.9'
     implementation 'com.google.android.gms:play-services-vision:11.0.2'
     implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+<<<<<<< HEAD
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
     implementation 'com.nex3z:notification-badge:1.0.2'
+=======
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
 }

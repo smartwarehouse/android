@@ -11,9 +11,15 @@
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+<<<<<<< HEAD
         <!--<item name="colorPrimary">@color/colorPrimary</item>-->
         <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
         <!--<item name="colorAccent">@color/colorAccent</item>-->
+=======
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
     </style>
 
     <style name="Montserrat">
@@ -33,6 +39,9 @@
     <style name="CardView">
         <item name="android:colorBackground">#4A1F8DC8</item>
     </style>
+<<<<<<< HEAD
 
     <style name="AppTheme.AppBarOverlay">toolbar</style>
+=======
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
 </resources>
