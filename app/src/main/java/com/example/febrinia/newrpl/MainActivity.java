@@ -58,7 +58,11 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.item5:
                     toolbar.setTitle("Request");
+<<<<<<< HEAD
+                    fragment = new UserRequestFragment();
+=======
                     fragment = new RequestFragment();
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
                     loadFragment(fragment);
                     return true;
             }

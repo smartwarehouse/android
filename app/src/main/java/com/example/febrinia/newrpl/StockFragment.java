@@ -1,7 +1,10 @@
 package com.example.febrinia.newrpl;
 
 
+<<<<<<< HEAD
+=======
 import android.content.Context;
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,8 +14,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
+=======
 import android.widget.ListView;
 import android.widget.Toast;
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
 
 import com.example.febrinia.newrpl.stock.OnStockItemClick;
 import com.example.febrinia.newrpl.stock.StockAdapter;

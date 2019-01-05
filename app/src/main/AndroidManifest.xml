@@ -9,18 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".stock.StockDetailActivity" />
+        <activity android:name=".RequestList" />
+        <!-- <activity android:name="com.example.nasruljr.newrpl.RequestList" /> -->
+        <activity
+            android:name=".coba"
+            android:theme="@style/AppTheme.NoActionBar">
+=======
 
         <activity android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/app_name">
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
+        <activity android:name=".KeranjangUser"></activity>
+=======
 
         <activity android:name=".stock.StockDetailActivity" />
+>>>>>>> 097d24b68091127880f20b424247138b662b1766
     </application>
 
 </manifest>
